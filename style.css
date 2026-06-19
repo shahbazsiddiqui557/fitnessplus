@@ -1,130 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f6f8;
-    color: #222;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 25px;
-    background: #111;
-    position: sticky;
-    top: 0;
-}
-
-.logo {
-    font-size: 28px;
+.badge {
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
     font-weight: bold;
-    color: white;
+    margin-bottom: 10px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 12px;
-    font-size: 16px;
-    transition: 0.3s;
+.rating {
+    font-size: 14px;
+    margin: 10px 0;
 }
 
-nav a:hover {
-    color: #f39c12;
+.price {
+    margin: 10px 0;
 }
 
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to right, #111, #333);
-    color: white;
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 8px;
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
+.new-price {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.hero p {
-    font-size: 18px;
-}
-
-.products {
-    padding: 40px 20px;
-}
-
-.products h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.product-card {
-    background: white;
-    width: 280px;
-    display: inline-block;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
-    vertical-align: top;
-}
-
-.product-card:hover {
-    transform: translateY(-8px);
-}
-
-.product-card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.product-card h3 {
-    margin-top: 15px;
-}
-
-.product-card p {
-    color: #555;
-}
-
-.product-card a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #f39c12;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-.product-card a:hover {
-    opacity: 0.9;
-}
-
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #111;
-    color: white;
-    margin-top: 40px;
-}
-
-@media(max-width:768px){
-    header {
-        flex-direction: column;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .product-card {
-        width: 90%;
-    }
+.discount {
+    color: green;
+    font-weight: bold;
+    margin-left: 8px;
 }
